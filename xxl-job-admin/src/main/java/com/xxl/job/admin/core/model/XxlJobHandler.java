@@ -13,8 +13,6 @@ public class XxlJobHandler {
     private int jobGroupId;
     // 执行器名
     private String jobGroupName;
-    // 状态：0-停止，1-运行
-    private int status;
     // 创建时间
     private Date creteTime;
     // 更新时间

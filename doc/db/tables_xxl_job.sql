@@ -181,7 +181,7 @@ CREATE TABLE IF NOT EXIST xxl_job_handler
     handler_desc   varchar(255) DEFAULT NULL,
     job_group_id   int(11) NOT NULL,
     job_group_name varchar(255) DEFAULT NULL,
-    status         tinyint(1) NOT NULL DEFAULT '0',
+--     status         tinyint(1) NOT NULL DEFAULT '0',
     crete_time     datetime     DEFAULT NULL,
     update_time    datetime     DEFAULT NULL,
     PRIMARY KEY (id)
