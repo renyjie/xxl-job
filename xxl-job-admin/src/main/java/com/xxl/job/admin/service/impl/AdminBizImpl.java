@@ -15,8 +15,6 @@ import java.util.List;
  */
 @Service
 public class AdminBizImpl implements AdminBiz {
-
-
     @Override
     public ReturnT<String> callback(List<HandleCallbackParam> callbackParamList) {
         return JobCompleteHelper.getInstance().callback(callbackParamList);
@@ -31,5 +29,4 @@ public class AdminBizImpl implements AdminBiz {
     public ReturnT<String> registryRemove(RegistryParam registryParam) {
         return JobRegistryHelper.getInstance().registryRemove(registryParam);
     }
-
 }

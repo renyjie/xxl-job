@@ -177,8 +177,8 @@ VALUES ('schedule_lock');
 CREATE TABLE IF NOT EXIST xxl_job_handler
 (
     id             int(11) NOT NULL AUTO_INCREMENT,
-    handler_name   varchar(255) NOT NULL,
-    handler_desc   varchar(255) DEFAULT NULL,
+    job_handler_name   varchar(255) NOT NULL,
+    job_handler_desc   varchar(255) DEFAULT NULL,
     job_group_id   int(11) NOT NULL,
     job_group_name varchar(255) DEFAULT NULL,
 --     status         tinyint(1) NOT NULL DEFAULT '0',

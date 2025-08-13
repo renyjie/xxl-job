@@ -6,9 +6,9 @@ public class XxlJobHandler {
     // 主键
     private int id;
     // Handler名称
-    private String handlerName;
+    private String jobHandlerName;
     // Handler描述
-    private String handlerDesc;
+    private String jobHandlerDesc;
     // 执行器主键
     private int jobGroupId;
     // 执行器名
@@ -26,20 +26,20 @@ public class XxlJobHandler {
         this.id = id;
     }
 
-    public String getHandlerName() {
-        return handlerName;
+    public String getJobHandlerName() {
+        return jobHandlerName;
     }
 
-    public void setHandlerName(String handlerName) {
-        this.handlerName = handlerName;
+    public void setJobHandlerName(String jobHandlerName) {
+        this.jobHandlerName = jobHandlerName;
     }
 
-    public String getHandlerDesc() {
-        return handlerDesc;
+    public String getJobHandlerDesc() {
+        return jobHandlerDesc;
     }
 
-    public void setHandlerDesc(String handlerDesc) {
-        this.handlerDesc = handlerDesc;
+    public void setHandlerDesc(String jobHandlerDesc) {
+        this.jobHandlerDesc = jobHandlerDesc;
     }
 
     public int getJobGroupId() {
@@ -56,14 +56,6 @@ public class XxlJobHandler {
 
     public void setJobGroupName(String jobGroupName) {
         this.jobGroupName = jobGroupName;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
     }
 
     public Date getCreteTime() {
@@ -86,11 +78,10 @@ public class XxlJobHandler {
     public String toString() {
         return "XxlJobHandler{" +
                 "id=" + id +
-                ", handlerName='" + handlerName + '\'' +
-                ", handlerDesc='" + handlerDesc + '\'' +
+                ", jobHandlerName='" + jobHandlerName + '\'' +
+                ", jobHandlerDesc='" + jobHandlerDesc + '\'' +
                 ", jobGroupId=" + jobGroupId +
                 ", jobGroupName='" + jobGroupName + '\'' +
-                ", status=" + status +
                 ", creteTime=" + creteTime +
                 ", updateTime=" + updateTime +
                 '}';

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxl.job.admin.dao.XxlJobHandlerDao">
+    <insert id="save" keyProperty="id" useGeneratedKeys="true">
+        insert into xxl_jon_handler(`job_group_id`, `job_group_name`, `job_handler_name`, `job_handler_desc`, `create_time`, `update_time`)
+        values (#{jobGroupId}, #{jobGroupName}, #{jobHandlerName}, #{jobHandlerDesc}, #{creteTime}, #{updateTime})
+    </insert>
+
+    <delete id="deleteById">
+        delete from xxl_job_handler
+        where id = #{id}
+    </delete>
+
+    <select id="pageList">
+        select *
+        from xxl_job_handler
+        where 1 = 1
+        <if test="jobGroupId != null and jobGroupId != ''">
+            and job_group_id = #{jobGroupId}
+        </if>
+    </select>
+</mapper>
